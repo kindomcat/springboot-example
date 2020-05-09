@@ -1,0 +1,11 @@
+
+amqp:
+  host: 192.168.1.185
+  port: 5672
+  username: admin
+  password: Senscape
+  exchange: log.exchange
+  routeKeys: log.exchange
+  queue: log.exchange
+server:
+  port: 7777

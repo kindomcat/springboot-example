@@ -1,0 +1,20 @@
+
+spring:
+  kafka:
+    listener:
+      missing-topics-fatal: false
+    bootstrap-servers: 192.168.1.186:32768,192.168.1.186:32770,192.168.1.186:32771
+    consumer:
+      enable-auto-commit: false
+      auto-commit-interval: 100ms
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      properties:
+        session.timeout.ms: 15000
+  rabbitmq:
+    host: 192.168.1.185
+    port: 5672
+    username: admin
+    password: Senscape
+server:
+  port: 9999
